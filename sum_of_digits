@@ -1,0 +1,24 @@
+#include<stdio.h>
+ int sumod(int n)
+ {
+ 	if(n==0)
+ 	{
+ 		return 0;
+	 }
+	 else
+	 {
+	 	return ((n%10)+sumod(n/10));
+	 }
+ }
+ 
+ int main()
+ {
+ 	int num=1234,res;
+ 	printf("By entering the number %d\n",num);
+ 	
+ 	res=sumod(num);
+ 	printf("Sum of digits of muber is %d\n",res);
+ 	return 0;
+ 	
+ 	return 0;
+ }
